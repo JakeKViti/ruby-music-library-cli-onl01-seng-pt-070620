@@ -26,5 +26,9 @@ class Song
     Song.new(song)
   end
 
+  def artist(artist)
+    @artist
+  end
+
 
 end
