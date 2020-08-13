@@ -26,10 +26,6 @@ class Song
     Song.new(song)
   end
 
-  def artist_name
-    if self.artist
-      self.artist.name
-    end
-  end
+
 
 end
