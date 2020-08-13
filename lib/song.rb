@@ -26,14 +26,6 @@ class Song
     Song.new(song)
   end
 
-  def artist=(artist)
-      if @artist == nil
-        @artist = artist
-      end
-      if self.artist != nil
-        Artist.add_song(self)
-      end
-      @artist
-    end
+
 
 end
