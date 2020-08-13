@@ -32,6 +32,7 @@ class Song
       else
         @artist = @artist
       end
+      @artist
     end
 
 end
