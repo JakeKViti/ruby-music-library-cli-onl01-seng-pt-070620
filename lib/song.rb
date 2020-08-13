@@ -60,7 +60,8 @@ end
 end
 
 def self.find_by_name(name)
-    self.all.detect {|artist| artist.name == name}
+    findname = self.all.detect {|artist| artist.name == name}
+    return findname
   end
 
   def self.create(name)
