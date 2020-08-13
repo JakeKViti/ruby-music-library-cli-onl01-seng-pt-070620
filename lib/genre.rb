@@ -26,4 +26,8 @@ class Genre
     newGenre
   end
 
+  def songs
+    @songs
+  end
+
 end
