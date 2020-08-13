@@ -61,7 +61,7 @@ end
 
 def self.find_by_name(name)
     findname = self.all.detect {|artist| artist.name == name}
-    return findname
+    return findname.uniq
   end
 
   def self.create(name)
