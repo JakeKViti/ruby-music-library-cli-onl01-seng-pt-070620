@@ -26,7 +26,7 @@ class Song
     Song.new(song)
   end
 
-  ef artist=(artist)
+  def artist=(artist)
       if @artist == nil
         @artist = artist
       else
