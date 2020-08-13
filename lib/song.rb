@@ -26,6 +26,9 @@ class Song
     Song.new(song)
   end
 
+  def artist=(artist)
+
+  end
 
 
 end
