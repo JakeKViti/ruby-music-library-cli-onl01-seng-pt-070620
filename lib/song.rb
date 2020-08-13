@@ -26,6 +26,12 @@ class Song
     Song.new(song)
   end
 
-
+  def artist=(artist)
+      if @artist == nil
+        @artist = artist
+      else
+        @artist = @artist
+      end
+    end
 
 end
