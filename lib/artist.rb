@@ -37,16 +37,4 @@ class Artist
 #  end
   end
 
-  def add_song_by_name(song)
-    song = Song.new(song)
-    add_song(song)
-  end
-
-  def self.song_count
-    count = 0
-    Song.all.select {|song| count+=1}
-    return count
-  end
-
-
 end
