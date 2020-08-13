@@ -50,4 +50,13 @@ class Song
       @genre
     end
 
+    def self.find_or_create_by_name(name)
+  if self.find(name)
+    self.find(name)
+  else
+  self.create_by_name(name)
+end
+end
+
+
 end
