@@ -60,8 +60,7 @@ end
 end
 
 def self.find_by_name(name)
-    findname = self.all.map {|artist| artist.name}
-    findname.uniq
+    findname = self.all.map {|artist| artist.name == name}
   end
 
   def self.create(name)
