@@ -30,7 +30,7 @@ class Song
       if @artist == nil
         @artist = artist
       end
-      if self.artist != nil
+      if @artist != nil
         Artist.add_song(self)
       end
       @artist
