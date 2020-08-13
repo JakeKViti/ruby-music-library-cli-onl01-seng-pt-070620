@@ -32,7 +32,4 @@ class Song
     end
   end
 
-  def artist=(artist)
-
-  end
 end
