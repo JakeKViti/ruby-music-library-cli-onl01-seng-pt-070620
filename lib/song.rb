@@ -58,5 +58,16 @@ class Song
 end
 end
 
+def self.find(name)
+    self.all.detect {|artist| artist.name == name}
+  end
+
+  def self.create_by_name(name)
+    artist = self.new(name)
+    artist.save
+    artist
+  end
+
+
 
 end
