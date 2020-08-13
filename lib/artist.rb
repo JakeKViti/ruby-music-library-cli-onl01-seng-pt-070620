@@ -5,6 +5,7 @@ class Artist
 
   def initialize(name)
     @name = name
+    @songs = []
     save
   end
 
@@ -23,6 +24,10 @@ class Artist
   def self.create(artist)
     newArtist = Artist.new(artist)
     newArtist
+  end
+
+  def songs
+    Song.all.select {|song| song.artist == self}
   end
 
 end
