@@ -54,7 +54,7 @@ class Song
   if self.find_by_name(name)
     self.find_by_name(name)
   else
-  self.create_by_name(name)
+  self.create(name)
 end
 end
 
@@ -62,7 +62,7 @@ def self.find_by_name(name)
     self.all.detect {|artist| artist.name == name}
   end
 
-  def self.create_by_name(name)
+  def self.create(name)
     artist = self.new(name)
     artist.save
     artist
